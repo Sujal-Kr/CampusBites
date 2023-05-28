@@ -1,0 +1,26 @@
+.sc-cont{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}  
+.sc-cont h2{
+    color: #Ffd700;
+    font-family: 'Josefin Sans', sans-serif;
+} 
+.token-cont{
+    color: #ffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.token-cont span{
+    color: #Ffd700;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.sc-cont p{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    color: #ffff;
+}

@@ -1,0 +1,108 @@
+.banner-cont{
+    /* position: relative; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    /* background: linear-gradient(to top, #fff, #000); */
+    background-image: url('../Assets/wall2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-cont{
+    z-index: 3;
+}
+.content-cont h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.content-cont p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1.6px;
+    color: #fff;
+}
+.action-btn{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.4rem;
+    z-index: 3;
+    /* justify-content: center; */
+}
+.action-btn button.explore-btn {
+    outline: none;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.action-btn button.explore-btn:hover{
+    border: 1px solid #c6a87d;
+    background-color: #c6a87d;
+}
+.explore-btn  a{
+    color: unset;
+    text-decoration: none
+}
+.bottom-image-cont{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 2;
+    /* height: 18rem; */
+    background-color: transparent ;
+    /* animation: float 2s  0.3s infinite ;
+    animation-timing-function: ease-in-out; */
+}
+.bottom-image-cont img{
+    height: 20rem;
+    aspect-ratio: 1/1;
+    mix-blend-mode: color-burn;
+}
+@media screen and (min-width: 768px){
+    .content-cont{
+       width: 80%;
+       margin: 0 auto ;
+    }
+    .content-cont h1{
+        font-size: 3rem;
+    }
+    .content-cont h6{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 992px){
+    .content-cont{
+       width: 40%;
+       margin: 0 2rem ;
+    }
+    .content-cont h1{
+        font-size: 3.5rem;
+    }
+    .content-cont h6{
+        font-size: 1.2rem;
+    }
+    .bottom-image-cont{
+        right: 10rem;
+        transform: translateX(0);
+    }
+    .bottom-image-cont img{
+        height:40rem;
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(-12px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

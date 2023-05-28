@@ -1,0 +1,83 @@
+.special-cont{
+    padding:8rem 2rem;
+    background-color: #101418;
+}
+.inner-special{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+.special-right img{
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top ;
+}
+.special-cont .heading{
+    color: #c6a87d;
+    text-align: center;
+}
+.special-cont .subhead{
+    text-align: center;
+    color:white;
+}
+.special-cont .sub-content{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+.menu-cont .menu{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .menu-item{
+    display: flex;
+    gap:1.2rem;
+}
+.menu .menu-item img{
+    height: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.menu-item .menu-name{
+    color: white;
+
+}
+.menu-item .menu-name h6{
+    font-family: 'Josefin Sans', sans-serif;;
+}
+.menu .menu-price{
+    color: #c6a87d;
+}
+.special-cont .action-cont{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.action-cont button.menu-btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    padding:  0.4rem 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s;
+}
+.action-cont .menu-btn a{
+    color: unset ;
+    text-decoration: none;
+}
+.action-cont button.menu-btn:hover{
+    background-color: #c6a87d;
+    border: 1px solid #c6a87d;
+
+}
+@media screen and (max-width: 992px) {
+    .inner-special{
+        grid-template-columns: 1fr;
+    }
+}

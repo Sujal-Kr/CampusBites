@@ -1,0 +1,83 @@
+.navbar-cont{
+    padding:  1rem 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.action-cont{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    text-transform:capitalize;
+}
+.nav-logo span{
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.nav-logo a{
+    text-decoration: none;;
+}
+.profile-cont{
+    display: flex;
+    padding: 0.3rem;
+    gap:0.4rem;
+    align-items: center;
+    background-color: #c6a87d;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    color: #fff;
+}
+.menu-cont{
+    font-size: 2rem;
+    color:#fff;
+}
+.navlist{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #101418;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    transform: translateX(100vw);
+    transition: 0.3s;
+}
+.navlist a{
+    color: unset ;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.active{
+    transform: translateX(0);
+}
+.close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .navbar-cont .menu-cont{
+       
+        color: #fff;
+    }
+    .nav-logo span{
+        font-size: 1.3rem;
+    }
+    
+}
+@media screen and (min-width:768px){
+    .navlist{
+        width: 50vh;
+    }
+}
